@@ -19,9 +19,9 @@
 function solution(s) {
   var c = s[0];
   // var c = s.charAt(0);
-  if (c == c.toUpperCase() && !(c >= '0' && c <= '9')) {
+  if (c == c.toUpperCase() && !(c >= '0' && c <= '9') &&(c >='A' && c <= 'Z')) {
     return 'upper';
-  } else if (c == c.toLowerCase() && !(c >= '0' && c <= '9')){
+  } else if (c == c.toLowerCase() && !(c >= '0' && c <= '9') &&(c >='a' && c <= 'z')){
     return 'lower';
   } else if (c >= '0' && c <= '9'){
     return 'digit'
