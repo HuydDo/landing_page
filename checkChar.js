@@ -19,16 +19,16 @@
 function solution(s) {
   var c = s[0];
   // var c = s.charAt(0);
-  if (c >= '0' && c <= '9'){
-    return 'digit'
-  } else if (c == c.toUpperCase()) {
+  if (c == c.toUpperCase() && !(c >= '0' && c <= '9')) {
     return 'upper';
-  } else if (c == c.toLowerCase()){
+  } else if (c == c.toLowerCase() && !(c >= '0' && c <= '9')){
     return 'lower';
+  } else if (c >= '0' && c <= '9'){
+    return 'digit'
   } else {
     return 'other' 
   }
 }
 
-var str = solution('9')
+var str = solution('_')
 console.log(str)
