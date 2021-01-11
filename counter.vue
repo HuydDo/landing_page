@@ -1,12 +1,22 @@
 <template>
-  <div>
-    <h2>Counter</h2>
-  </div>
+    <div>
+      <h2 class='counter'>{{counter}}</h2>
+      <button @click="incrementValue" class="counter-button">Click</button>
+    </div>
 </template>
 
 <script>
   export default {
-    name: 'counter',
+    data() {
+      return {
+        counter: 42
+      }
+    },
+    methods: {
+      incrementValue() {
+        this.counter++;
+      }
+    }
   };
 </script>
 
@@ -17,3 +27,5 @@
     color: #585858
   }
 </style>
+
+
