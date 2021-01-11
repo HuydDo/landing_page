@@ -1,4 +1,5 @@
-var strings = 'this iS a TeSt 523 Now!';
+// var strings = 'this iS a TeSt 523 Now!';
+var strings = '@'
 var i=0;
 var character='';
 while (i <= strings.length){
@@ -16,3 +17,19 @@ while (i <= strings.length){
     i++;
 }
 
+function solution(s) {
+  var c = s[0];
+  // var c = s.charAt(0);
+  if ((!isNaN(c * 1))){
+    return 'digit'
+  } else if (c == c.toUpperCase()) {
+    return 'upper';
+  } else if (c == c.toLowerCase()){
+    return 'lower';
+  } else {
+    return 'other' 
+  }
+}
+
+var str = solution('17')
+console.log(str)
