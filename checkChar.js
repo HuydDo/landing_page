@@ -29,6 +29,8 @@ function solution(s) {
     return 'other' 
   }
 }
-
-var str = solution('_')
-console.log(str)
+var str1= (solution('A')) // upper
+var str2 = solution('b') // lower
+var str3 = solution('1') // digit
+var str4 = solution('_') // other
+console.log(`${str1} ${str2} ${str3} ${str4}`)
