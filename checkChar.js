@@ -34,3 +34,4 @@ var str2 = solution('b') // lower
 var str3 = solution('1') // digit
 var str4 = solution('_') // other
 console.log(`${str1} ${str2} ${str3} ${str4}`)
+
